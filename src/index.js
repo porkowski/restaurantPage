@@ -23,10 +23,6 @@ function element() {
 
 
 
-    const footer = document.createElement('footer');
-    footer.innerHTML = 'Image of Italian farm by www.propertyguides.com - Image of chef from www.loc.gov/item/2017821678/ - Image of pasta from www.italyfoodies.com';
-    element.appendChild(footer);
-
     //Create inner Div for tabs
         function innerelement() {
             const element = document.createElement('div');
@@ -50,6 +46,10 @@ function element() {
         }
 
     element.appendChild(innerelement());
+
+    const footer = document.createElement('footer');
+    footer.innerHTML = 'Image of Italian farm by www.propertyguides.com - Image of chef from www.loc.gov/item/2017821678/ - Image of pasta from www.italyfoodies.com';
+    element.appendChild(footer);
 
     return element;
 }

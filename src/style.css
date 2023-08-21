@@ -9,6 +9,7 @@ body {
     background-color: rgba(255, 235, 205, 0.342);
     height:100vh;
     position:relative;
+    margin:0;
 }
 #content #mainDiv{
     font-family: Italiano;
@@ -31,12 +32,11 @@ footer {
     font-family:'Courier New', Courier, monospace;
     font-size:.5rem;
     position:absolute;
-    bottom:3%;
+    bottom:2%;
 }
 
 #tabs {
-    position:absolute;
-    top:950px;
+    margin-top:25px;
     display:flex;
     flex-direction: row;
     justify-content: space-around;
@@ -70,7 +70,7 @@ button:hover {
     display:block;
     margin-left:auto;
     margin-right:auto;
-    width:70%;
+    width:60%;
     border-radius:10px;
 }
 
@@ -86,7 +86,7 @@ button:hover {
 }
 
 #mainDiv #pastapic {
-    width:25%;
+    width:22%;
 }
 
 #mainDiv #pastadesc {

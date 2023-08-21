@@ -24,9 +24,6 @@ function specialeFunction() {
     description.innerHTML = 'This weeks special happens to be Lorenzo\'s most perfected dish, the same one he is pictured making back in the 1980\'s. Pasta with the customers meat of choice, along with signature cheese imported from Lazio';
     element.appendChild(description);
 
-    const footer = document.createElement('footer');
-    footer.innerHTML = 'Image of Italian farm by www.propertyguides.com - Image of chef from www.loc.gov/item/2017821678/ - Image of pasta from www.italyfoodies.com';
-    element.appendChild(footer);
 
     //Create inner Div for tabs
         function innerelement() {
@@ -51,6 +48,10 @@ function specialeFunction() {
         }
 
     element.appendChild(innerelement());
+
+    const footer = document.createElement('footer');
+    footer.innerHTML = 'Image of Italian farm by www.propertyguides.com - Image of chef from www.loc.gov/item/2017821678/ - Image of pasta from www.italyfoodies.com';
+    element.appendChild(footer);
 
     return element;
 }
