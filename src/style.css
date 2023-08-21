@@ -8,20 +8,21 @@
 body {
     background-color: rgba(255, 235, 205, 0.342);
     height:100vh;
+    width:100vw;
     position:relative;
     margin:0;
 }
+
 #content #mainDiv{
     font-family: Italiano;
     display:flex;
     flex-direction: column;
     align-items: center;
     font-size:2.2rem;
-
 }
 
 #content div img {
-    width:761px;
+    width: min(761px,90%);
 }
 
 #content h3 {
@@ -33,14 +34,15 @@ footer {
     font-size:.5rem;
     position:absolute;
     bottom:2%;
+    text-align: center;
 }
 
 #tabs {
-    margin-top:25px;
+    margin-top:3vh;
     display:flex;
     flex-direction: row;
     justify-content: space-around;
-    width:761px;
+    width:40vw;
 }
 
 #tabs button {
@@ -62,38 +64,43 @@ button:hover {
 }
 
 #contactDiv {
-    width:761px;
-    font-size:1rem;
+    width:min(575px,90%);
+    font-size:1.1rem;
 }
 
 #contactDiv #hchefpic {
     display:block;
     margin-left:auto;
     margin-right:auto;
-    width:60%;
+    width: min(391px,60%);
     border-radius:10px;
 }
 
 #contactDiv p {
     font-family:'Courier New', Courier, monospace;
+    font-size:.8rem;
 }
 
 #smallpicfooter {
-    font-size:.7rem;
+    font-size:.6rem;
     text-align:center;
     font-style:italic;
     color:rgb(112, 112, 112);;
 }
 
 #mainDiv #pastapic {
-    width:22%;
+    width:min(316px,50%);
 }
 
 #mainDiv #pastadesc {
-    width:500px;
+    width:min(575px,90%);
     font-family:'Courier New', Courier, monospace; 
     text-align: center;
     font-size:.8rem;
+}
+
+#mainDiv p {
+    width:min(761px,90%);
 }
 
 .disappear {
@@ -108,42 +115,26 @@ button:hover {
 
 
 
-@media screen and (max-width: 415px) {
-    body {
-        width:100vw;
-    }
-    h3 {
-        font-size:2rem;
-    }
 
-    #content div img {
-        width:375px;
+@media screen and (max-width: 760px) {
+
+    #mainDiv p {
+        text-align: center;
     }
 
-    p {
-        font-size:1rem;
+    #contactDiv p {
+        text-align:left;
     }
 
-    #tabs {
-        top:700px;
-        width:375px;
+    #content h3 {
+        font-size:3rem;
+        margin-top:20px;
+        margin-bottom:20px;
     }
+};
 
-    footer {
-        top:800px;
-    }
-
-    #contactDiv {
-        width:375px;
-    }
-
-
-
-    #mainDiv #pastapic {
-        width:20%;
-    }
-
-    #mainDiv #pastaDesc {
-        width:300px;
+@media screen and (max-height: 820px) {
+    #contactDiv footer{
+        position:static;
     }
 }
