@@ -1,0 +1,149 @@
+@font-face {
+    font-family: 'Italiano';
+    src:url('./Italianno-Regular.ttf');
+    font-weight: 600;
+    font-style:normal;
+}
+
+body {
+    background-color: rgba(255, 235, 205, 0.342);
+    height:100vh;
+    position:relative;
+}
+#content #mainDiv{
+    font-family: Italiano;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    font-size:2.2rem;
+
+}
+
+#content div img {
+    width:761px;
+}
+
+#content h3 {
+    font-size:4rem;
+}
+
+footer {
+    font-family:'Courier New', Courier, monospace;
+    font-size:.5rem;
+    position:absolute;
+    bottom:3%;
+}
+
+#tabs {
+    position:absolute;
+    top:950px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width:761px;
+}
+
+#tabs button {
+    font-size:2rem;
+    appearance:none;
+    font-family: Italiano;
+    border:none;
+    background-color: rgba(255, 235, 205, 0);
+}
+
+#tabs .selected {
+    color:rgb(112, 112, 112);
+}
+
+button:hover {
+    cursor:pointer;
+    color:rgb(80, 80, 80);
+    transition: color 1s;
+}
+
+#contactDiv {
+    width:761px;
+    font-size:1rem;
+}
+
+#contactDiv #hchefpic {
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    width:70%;
+    border-radius:10px;
+}
+
+#contactDiv p {
+    font-family:'Courier New', Courier, monospace;
+}
+
+#smallpicfooter {
+    font-size:.7rem;
+    text-align:center;
+    font-style:italic;
+    color:rgb(112, 112, 112);;
+}
+
+#mainDiv #pastapic {
+    width:25%;
+}
+
+#mainDiv #pastadesc {
+    width:500px;
+    font-family:'Courier New', Courier, monospace; 
+    text-align: center;
+    font-size:.8rem;
+}
+
+.disappear {
+    opacity:0%;
+    transition:opacity 1.3s;
+}
+
+.reappear {
+    opacity:100%;
+    transition:opacity 1.3s;
+}
+
+
+
+@media screen and (max-width: 415px) {
+    body {
+        width:100vw;
+    }
+    h3 {
+        font-size:2rem;
+    }
+
+    #content div img {
+        width:375px;
+    }
+
+    p {
+        font-size:1rem;
+    }
+
+    #tabs {
+        top:700px;
+        width:375px;
+    }
+
+    footer {
+        top:800px;
+    }
+
+    #contactDiv {
+        width:375px;
+    }
+
+
+
+    #mainDiv #pastapic {
+        width:20%;
+    }
+
+    #mainDiv #pastaDesc {
+        width:300px;
+    }
+}
