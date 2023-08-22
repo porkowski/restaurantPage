@@ -3,13 +3,12 @@ import image from './img1.jpg'
 import { specialeFunction } from './speciale';
 import { contactFunction } from './contact';
 
-function innerelement() {
+function innerelement(option) {
     const element = document.createElement('div');
     element.setAttribute('id','tabs');
     
     const option1 = document.createElement('button');
     option1.innerHTML = 'Home';
-    option1.setAttribute('class','selected');
     element.appendChild(option1);
 
     const option2 = document.createElement('button');
@@ -19,6 +18,14 @@ function innerelement() {
     const option3 = document.createElement('button');
     option3.innerHTML = 'Contact';
     element.appendChild(option3);
+
+    if (option == 'option1') {
+        option1.setAttribute('class','selected');
+    } else if (option == 'option2') {
+        option2.setAttribute('class','selected');
+    } else if (option == 'option3') {
+        option3.setAttribute('class','selected');
+    };
 
 
     return element
@@ -46,7 +53,7 @@ function element() {
 
 
     //Create inner Div for tabs
-    element.appendChild(innerelement());
+    element.appendChild(innerelement('option1'));
 
     const footer = document.createElement('footer');
     footer.innerHTML = 'Image of Italian farm by www.propertyguides.com - Image of chef from www.loc.gov/item/2017821678/ - Image of pasta from www.italyfoodies.com';

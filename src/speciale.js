@@ -28,7 +28,7 @@ function specialeFunction() {
 
 
     //Create inner Div for tabs
-    element.appendChild(innerelement());
+    element.appendChild(innerelement('option2'));
 
     const footer = document.createElement('footer');
     footer.innerHTML = 'Image of Italian farm by www.propertyguides.com - Image of chef from www.loc.gov/item/2017821678/ - Image of pasta from www.italyfoodies.com';
