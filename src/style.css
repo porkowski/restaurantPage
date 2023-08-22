@@ -100,6 +100,7 @@ button:hover {
 }
 
 #mainDiv p {
+    text-align:center;
     width:min(761px,90%);
 }
 
@@ -114,20 +115,9 @@ button:hover {
 }
 
 
-@media screen and (max-height: 820px) {
 
-    footer{
-        position:static;
-        margin-top:30px;
-    }
-
-};
 
 @media screen and (max-width: 760px) {
-
-    #mainDiv p {
-        text-align: center;
-    }
 
     #contactDiv p {
         text-align:left;
@@ -140,3 +130,11 @@ button:hover {
     }
 };
 
+@media screen and (max-height: 820px) {
+
+    footer{
+        position:static;
+        margin-top:30px;
+    }
+
+};
