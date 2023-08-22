@@ -114,7 +114,14 @@ button:hover {
 }
 
 
+@media screen and (max-height: 820px) {
 
+    footer{
+        position:static;
+        margin-top:30px;
+    }
+
+};
 
 @media screen and (max-width: 760px) {
 
@@ -133,8 +140,3 @@ button:hover {
     }
 };
 
-@media screen and (max-height: 820px) {
-    #contactDiv footer{
-        position:static;
-    }
-}

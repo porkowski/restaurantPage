@@ -1,5 +1,7 @@
 import './style.css';
 import img1 from './chef1.png'
+import { innerelement } from './index';
+
 
 function contactFunction() {
     //Create div for all generated elements to be children of
@@ -48,27 +50,6 @@ function contactFunction() {
 
 
     //Create inner Div for tabs
-        function innerelement() {
-            const element = document.createElement('div');
-            element.setAttribute('id','tabs');
-            
-            const option1 = document.createElement('button');
-            option1.innerHTML = 'Home';
-            element.appendChild(option1);
-
-            const option2 = document.createElement('button');
-            option2.innerHTML = 'Speciale';
-            element.appendChild(option2);
-
-            const option3 = document.createElement('button');
-            option3.setAttribute('class','selected');
-            option3.innerHTML = 'Contact';
-            element.appendChild(option3);
-
-
-            return element
-        }
-
     element.appendChild(innerelement());
 
     const footer = document.createElement('footer');

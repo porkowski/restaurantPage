@@ -3,6 +3,28 @@ import image from './img1.jpg'
 import { specialeFunction } from './speciale';
 import { contactFunction } from './contact';
 
+function innerelement() {
+    const element = document.createElement('div');
+    element.setAttribute('id','tabs');
+    
+    const option1 = document.createElement('button');
+    option1.innerHTML = 'Home';
+    option1.setAttribute('class','selected');
+    element.appendChild(option1);
+
+    const option2 = document.createElement('button');
+    option2.innerHTML = 'Speciale';
+    element.appendChild(option2);
+
+    const option3 = document.createElement('button');
+    option3.innerHTML = 'Contact';
+    element.appendChild(option3);
+
+
+    return element
+}
+
+
 function element() {
     //Create div for all generated elements to be children of
     const element = document.createElement('div');
@@ -24,27 +46,6 @@ function element() {
 
 
     //Create inner Div for tabs
-        function innerelement() {
-            const element = document.createElement('div');
-            element.setAttribute('id','tabs');
-            
-            const option1 = document.createElement('button');
-            option1.innerHTML = 'Home';
-            option1.setAttribute('class','selected');
-            element.appendChild(option1);
-
-            const option2 = document.createElement('button');
-            option2.innerHTML = 'Speciale';
-            element.appendChild(option2);
-
-            const option3 = document.createElement('button');
-            option3.innerHTML = 'Contact';
-            element.appendChild(option3);
-
-
-            return element
-        }
-
     element.appendChild(innerelement());
 
     const footer = document.createElement('footer');
@@ -84,3 +85,5 @@ document.addEventListener('click',(event) => {
 
     };
 })
+
+export {innerelement};
